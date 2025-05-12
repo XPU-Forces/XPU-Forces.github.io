@@ -149,3 +149,7 @@ def matmul(A: torch.Tensor, B: torch.Tensor):
                              triton.next_power_of_2(triton.cdiv(M, ttx.hardware_info.core_num)))
     return C
 ```
+
+# 相关文档链接
+
+- [Triton X 用户指南](https://bd-seed-hhw.github.io/triton-x_user_guide/)
