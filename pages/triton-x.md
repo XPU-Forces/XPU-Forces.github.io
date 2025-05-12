@@ -152,4 +152,4 @@ def matmul(A: torch.Tensor, B: torch.Tensor):
 
 # 相关文档链接
 
-- [Triton X 用户指南](https://bd-seed-hhw.github.io/triton-x_user_guide/)
+- [triton-x user guide](https://bd-seed-hhw.github.io/triton-x_user_guide/)
