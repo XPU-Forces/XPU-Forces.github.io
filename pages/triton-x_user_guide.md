@@ -140,3 +140,9 @@ triton-x问题跟踪
 ### 开源代码路径
 [github](https://github.com/BD-Seed-HHW/triton-x)  
 [code.byted.org](https://code.byted.org/seed/triton-x)
+
+### 打印
+添加下面环境变量打开打印。 
+```shell
+export TRITON_DEVICE_PRINT=1
+```
