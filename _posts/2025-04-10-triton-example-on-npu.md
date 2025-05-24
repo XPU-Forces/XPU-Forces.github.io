@@ -11,7 +11,7 @@ author: mingfa
 docker login -u your_name hub.byted.org 
 docker pull hub.byted.org/tritonx/runtime-ascend8.0.rc3-ubuntu20.04-x86_64:1.0.0.1
 # 3. 运行并进入容器，以仿容器重名建议把 ttx-npu 修改成 ttx-npu-yourname
-docker run -it --name ttx-npu --shm-size=300g --privileged -e ASCEND_VISIBLE_DEIVCES=1 -e ASCEND_RT_VISIBLE_DEVICES=1 -v /home:/home -v /etc/localtime:/etc/localtime -v /usr/local/Ascend/driver:/usr/local/Ascend/driver -v /usr/local/dcmi:/usr/local/dcmi -v /usr/local/bin/npu-smi:/usr/local/bin/npu-smi --net=host hub.byted.org/tritonx/runtime-ascend8.0.rc3-ubuntu20.04-x86_64:1.0.0.1 bash
+docker run -it --name ttx-npu --shm-size=300g --privileged -e ASCEND_VISIBLE_DEIVCES=1 -e ASCEND_RT_VISIBLE_DEVICES=1 -v /home:/home -v /etc/localtime:/etc/localtime -v /usr/local/Ascend/driver:/usr/local/Ascend/driver -v /usr/local/dcmi:/usr/local/dcmi -v /usr/local/bin/npu-smi:/usr/local/bin/npu-smi --net=host hub.byted.org/tritonx/runtime-ascend8.0.rc3-ubuntu20.04-x86_64:1.0.0.1 bash  
 # 4. 确认一下npu 的状态
 npu-smi info
 # 5. 确认一下 triton 版本

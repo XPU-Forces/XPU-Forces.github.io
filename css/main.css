@@ -138,4 +138,18 @@ table tr td :last-child {
 
   /* 文字两端对齐 */
   text-align: justify;
+
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  white-space: pre-wrap;
+  word-break: break-word;
 }
+
+.highlight pre {
+  white-space: pre-wrap;
+  /* 允许代码自动换行 */
+  word-wrap: break-word;
+  /* 避免溢出 */
+}
+
