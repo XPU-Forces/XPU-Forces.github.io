@@ -1,0 +1,9 @@
+name: Byted-AIC
+# markdown: kramdown
+permalink: /blog/:year/:month/:day/:title
+highlighter: rouge
+# markdown: kramdown
+# kramdown:
+#   input: GFM
+#   syntax_highlighter: rouge
+#   hard_wrap: true  # 将单换行符转换为<br>，相当于 GitHub Flavored Markdown 的行为
